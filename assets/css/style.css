@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+body{
+    font-family: 'Merienda', cursive;
+    background-color: beige;
+    overflow-x: hidden;
+}
+
+.nav{
+    display: flex;
+    box-shadow: 0px 10px 10px rgb(208, 195, 195);
+}
+.stuff{
+    transform: translateX(650px);
+}
+.stuff ul{
+    list-style: none;
+    display: flex;
+}
+.stuff ul li{
+    margin: 6px;
+    margin-top: 3px;
+}
+.stuff ul li:hover{
+    color: rgb(15, 102, 201);
+    cursor: pointer;
+}
+.main{
+   transform: translateY(15px) translateX(30px);
+   font-size: 20px;
+   font-weight: 500;
+}
+.container{
+    display: block;
+}
+.title{
+    font-size: 25px;
+    color:blue;
+    animation-name: title;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes title{
+    0%{transform:translateY(30px) translateX(-150px);}
+    100%{transform:translateY(30px) translateX(1350px);}
+}
+.content{
+    display: flex;
+}
+.row1 div,.row2 div{
+    background-color: rgb(218, 211, 211);
+    transform: translateY(70px);
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.fa-location-dot,.fa-phone,.fa-star,.fa-envelope,.fa-clock{
+    color: rgb(15, 102, 201);
+    font-size: 30px;
+}
+.head{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.row1,.row2{
+    display: flex;
+}
+.row2{
+    margin-top: 20px;
+}
+.message-con{
+    background-color:rgb(218, 211, 211);
+    width: 500px;
+    height: 420px;
+    transform: translateY(50px) translateX(50px);
+    border-radius: 10px;
+}
+.input1{
+    display: flex;
+}
+.input1 input,.message-con input{
+    height: 30px;
+    width: 205px;
+    transform: translateX(35px) translateY(10px);
+    background-color: beige;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    margin: 2px;
+}
+.subject input{
+    width: 420px;
+}
+.message input{
+    width: 420px;
+    height: 200px;
+    text-align: center;
+}
+.sendBTN{
+    transform: translateX(200px) translateY(30px);
+    background-color:rgb(15, 102, 201);
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: beige;
+    transition-duration: 0.4s;
+}
+.sendBTN:hover{
+    background-color:beige;
+    color: rgb(15, 102, 201);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
